@@ -25,7 +25,7 @@ def get_filters():
     city_filter = ['chicago', 'new york city', 'washington']
     city = input("Please input your city name. The available cities are Chicago, New york city and Washington.\n").lower().strip()
     while city not in city_filter:
-        print('You have entered a wrong input for city')
+        print('You have entered an incorrect input for city')
         city_loop = input('Do you wish to re-enter a correct city input?\n Enter Yes or any other character to exit\n').lower().strip()
         if city_loop == 'yes':
             city = input("\nFilter data by city\n. Available cities are Chicago, New York city or Washington\n").lower().strip()
@@ -38,7 +38,7 @@ def get_filters():
     month = None
     month = input("Input the month between January to June.\n").lower().strip()
     while month not in month_filter:
-        print('You have entered a wrong input')
+        print('You have entered an incorrect input')
         month_loop = input('Do you want to re-enter a correct input for month?\n Enter yes or any other character to exit\n').lower().strip()
         if month_loop == 'yes':
             month = input("\nYou can now enter the correct month\n. Input 'all' to view all available month or input any month between january to june").lower().strip()
@@ -51,7 +51,7 @@ def get_filters():
     day = None
     day = input("Input the day of the week.\n").lower().strip()
     while day not in day_filter:
-        print('You have entered a wrong input')
+        print('You have entered an incorrect input')
         day_loop = input('Do you wish to re-enter a correct day input?\n Enter yes or any other character to exit\n').lower().strip()
         if day_loop == 'yes':
             day = input("\nYou can now enter the correct day of the week\n. Input 'all' to view all days of the week or input any day of the week").lower().strip()
@@ -248,3 +248,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
