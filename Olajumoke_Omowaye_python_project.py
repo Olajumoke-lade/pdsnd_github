@@ -38,7 +38,7 @@ def get_filters():
     month = None
     month = input("Input the month between January to June.\n").lower().strip()
     while month not in month_filter:
-        print('You have entered a wrong input')
+        print('You have entered an incorrect input')
         month_loop = input('Do you want to re-enter a correct input for month?\n Enter yes or any other character to exit\n').lower().strip()
         if month_loop == 'yes':
             month = input("\nYou can now enter the correct month\n. Input 'all' to view all available month or input any month between january to june").lower().strip()
