@@ -51,7 +51,7 @@ def get_filters():
     day = None
     day = input("Input the day of the week.\n").lower().strip()
     while day not in day_filter:
-        print('You have entered a wrong input')
+        print('You have entered an incorrect input')
         day_loop = input('Do you wish to re-enter a correct day input?\n Enter yes or any other character to exit\n').lower().strip()
         if day_loop == 'yes':
             day = input("\nYou can now enter the correct day of the week\n. Input 'all' to view all days of the week or input any day of the week").lower().strip()
